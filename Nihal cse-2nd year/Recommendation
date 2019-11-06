@@ -15,6 +15,7 @@ distance, indices = model.kneighbors(books_features)
 model = neighbors.NearestNeighbors(n_neighbors=6, algorithm='ball_tree')
 model.fit(books_features)
 distance, indices = model.kneighbors(books_features)
+#Checking Recommendation
 print_similar_books("The Catcher in the Rye")
 print_similar_books("The Hobbit or There and Back Again")
 get_id_from_partial_name("Harry Potter and the")
